@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DreamDBD — Rating</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="rating.css">
+</head>
+<body>
+
+<div id="countdownScreen" class="screen">
+    <div id="countdownNumber" class="countdown-number">3</div>
+</div>
+
+<div id="roleScreen" class="screen hidden">
+    <h2>Choose your role</h2>
+
+    <div class="roles">
+        <button id="survivorBtn" class="role-btn survivor">
+            <img src="https://i.redd.it/h5qh26afvepc1.png" alt="Survivor">
+            <span>Survivor</span>
+        </button>
+
+        <button id="killerBtn" class="role-btn killer">
+            <img src="https://deadbydaylight.wiki.gg/images/thumb/IconHelpLoading_killer.png/320px-IconHelpLoading_killer.png?13800b" alt="Killer">
+            <span>Killer</span>
+        </button>
+    </div>
+</div>
+
+<div id="perkScreen" class="screen hidden column">
+
+    <div id="selectedPerks">
+        <div class="selected-slot" data-type="exaust"></div>
+        <div class="selected-slot" data-type="secondchance"></div>
+        <div class="selected-slot" data-type="boon"></div>
+    </div>
+
+    <div id="perkGrid" class="perk-grid"></div>
+
+    <div id="pagination" class="pagination"></div>
+
+    <button id="banBtn" class="role-btn killer ban-btn">
+        <span>BAN</span>
+    </button>
+
+    <button id="goBtn" class="ban-btn hidden">
+        GO
+    </button>
+
+    <button id="goSurvBtn" class="ban-btn hidden">
+        CONTINUE
+    </button>
+
+</div>
+
+<div id="blockedModal" class="blocked-modal hidden">
+    <div class="blocked-window">
+
+        <h3 id="blockedTitle"></h3>
+
+        <div id="blockedPerks" class="blocked-perks"></div>
+
+        <p id="blockedSubtitle" class="revenge-text"></p>
+
+        <button id="blockedContinue" class="ban-btn">
+            Continue
+        </button>
+    </div>
+</div>
+
+<div id="mapScreen" class="hidden">
+
+    <h2 id="mapPhaseTitle">Killer bans 4 realms</h2>
+
+    <div id="mapGrid" class="map-grid"></div>
+
+    <button id="mapActionBtn" class="ban-btn" disabled>
+        Confirm
+    </button>
+
+</div>
+
+<div id="casinoModal" class="casino-modal hidden">
+
+    <div class="casino-window">
+
+        <h2 class="casino-title">Choosing the Trial</h2>
+
+        <div class="casino-slots">
+
+            <div class="slot-column">
+                <div class="slot-window" id="realmSlot"></div>
+                <div class="slot-label">Realm</div>
+            </div>
+
+            <div class="slot-column">
+                <div class="slot-window" id="variationSlot"></div>
+                <div class="slot-label">Variation</div>
+            </div>
+
+        </div>
+
+        <button class="ban-btn play-btn" id="playBtn">
+            PLAY
+        </button>
+
+    </div>
+
+</div>
+
+<div id="resultScreen" class="screen hidden column">
+
+    <h2 class="result-title">MATCH RESULT</h2>
+
+    <div id="reportTable" class="report-table"></div>
+
+    <div class="result-buttons">
+        <button id="logBtn" class="ban-btn small">ACTION LOG</button>
+        <button id="exitBtn" class="ban-btn small">EXIT</button>
+    </div>
+
+</div>
+
+<div id="logScreen" class="hidden">
+    <h2>Match Action Log</h2>
+
+    <div id="logList" class="log-list"></div>
+
+    <button id="backToResults">BACK</button>
+</div>
+
+
+<script type="module" src="rating.js"></script>
+</body>
+</html>

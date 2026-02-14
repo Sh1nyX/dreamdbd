@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ranked Mode</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="ratingInfo.css">
+</head>
+
+
+
+
+<body>
+
+<div id="survivorRulesModal" class="rules-modal">
+    <div class="rules-window">
+
+        <h2>Score System Rules – Survivors</h2>
+
+        <div class="rules-content">
+
+            <h3>General</h3>
+            <ul>
+                <li>Escape: +10 rating points</li>
+                <li>+10 additional points for each teammate who escapes</li>
+                <li>Every 25% of generator repair grants +2.5 points to the repairing survivor</li>
+                <li>Every 25% of healing progress grants +1 point</li>
+                <li>Saving a survivor while the Killer is attempting to pick them up: +10</li>
+                <li>Saving a survivor from the Killer’s shoulder: +5</li>
+                <li>Killer stun: +1</li>
+                <li>Killer hinder (slowdown): +1</li>
+                <li>Safe unhook: +2.5</li>
+            </ul>
+
+            <h3>Runner</h3>
+            <ul>
+                <li>Earns bonus rating points for chase performance</li>
+                <li>Against standard M1 Killers:
+                    <ul>
+                        <li>+2 points per 10s of chase while healthy</li>
+                        <li>+3 points per 10s while injured</li>
+                    </ul>
+                </li>
+                <li>Against Killers that apply easy first hits:
+                    <ul>
+                        <li>+3 points per 10s healthy</li>
+                        <li>+2 points per 10s injured</li>
+                    </ul>
+                </li>
+                <li>Against high-pressure Killers:
+                    <ul>
+                        <li>+3 points per 10s regardless of health state</li>
+                    </ul>
+                </li>
+                <li>Losing a chase: +3</li>
+                <li>Stun / blind during chase: +2</li>
+                <li>Hinder during chase: +2</li>
+            </ul>
+
+            <h3>Medic</h3>
+            <ul>
+                <li>25% heal: +2.5</li>
+                <li>Full heal state: +10</li>
+                <li>Healing Runner or Altruist: +5 per 25%</li>
+                <li>Pick up survivor from dying state: +10</li>
+                <li>Pick up Runner: +15</li>
+            </ul>
+
+            <h3>Altruist</h3>
+            <ul>
+                <li>Stun or blind the Killer: +4</li>
+                <li>Carry saves grant double points</li>
+                <li>Hook saves grant double points</li>
+                <li>Basement saves grant quadruple points</li>
+                <li>Endurance activation from Killer hit:
+                    <ul>
+                        <li>+10 normally</li>
+                        <li>+15 when triggered through "Mettle of Man" perk</li>
+                    </ul>
+                </li>
+                <li>Protection hit: +5 (Works only if the other survivor is within 5 meters of the killer</li>
+            </ul>
+
+            <h3>Engineer</h3>
+            <ul>
+                <li>Breaking a 3-gen formation grants +5 for 25%</li>
+                <li>Repairing within 7m of the Killer: +5 per 25%</li>
+                <li>Opening exit gates: +5</li>
+                <li>Opening exit gates within 7m of the Killer: +10</li>
+            </ul>
+
+        </div>
+
+        <button id="closeSurvRules" class="ban-btn small rules-close">
+            Close
+        </button>
+    </div>
+</div>
+
+<div id="killerRulesModal" class="rules-modal">
+    <div class="rules-window">
+
+        <h2>Score System Rules – Killer</h2>
+
+        <div class="rules-content">
+
+            <h3 class="center">Passive Bonus</h3>
+
+            <p class="center">
+                Basic M1 Killers gain a permanent 5th perk slot:
+                <strong>Brutal Strength</strong>
+            </p>
+
+            <ul class="center-list">
+                <li>The Trapper</li>
+                <li>The Hag</li>
+                <li>The Skull Merchant</li>
+                <li>The Pig</li>
+                <li>The Nightmare</li>
+                <li>The Ghost Face</li>
+                <li>The Onryō</li>
+            </ul>
+
+            <h3>General</h3>
+            <ul>
+                <li>Kill or sacrifice: +10</li>
+                <li>Hooking a survivor: +2</li>
+                <li>Unique hook chain: +2</li>
+                <li>Breaking pallets or walls: +1</li>
+                <li>Successful hit: +1</li>
+                <li>Downing survivor: +2</li>
+
+                <li>Grabbing survivors from lockers or interrupting them on generators, pallets or windows: +5</li>
+
+                <li>
+                    Generator kick: +1
+                    <br>
+                    Applies to all kick-based regression effects, including AoE explosions (+1 for each exploded generator)
+                </li>
+
+                <li>
+                    Generator kick with "Pop Goes the Weasel" grants +2 instead of +1
+                </li>
+
+                <li>
+                    Generator blocking grants +1 rating point for every 10 seconds
+                </li>
+            </ul>
+
+            <h3>Vs Runner</h3>
+            <ul>
+                <li>Hit: +2 instead of +1</li>
+                <li>Down: +4 instead of +2</li>
+                <li>Downing Runner in under 10s chase: +10</li>
+                <li>Breaking pallets or walls during chase: +2</li>
+            </ul>
+
+            <h3>Vs Altruist</h3>
+            <ul>
+                <li>Hit during carry interaction: +2</li>
+                <li>Down during carry interaction: +4</li>
+                <li>Interrupting hook rescue animation grants the same bonus
+                    <br>(only if Killer was not near the hook for longer than 10 seconds)</li>
+            </ul>
+
+            <h3>Vs Medic</h3>
+            <ul>
+                <li>Hit during healing: +2</li>
+                <li>Down during healing: +4</li>
+                <li>Bonuses are doubled if Medic was healing the Runner</li>
+            </ul>
+
+            <h3>Vs Engineer</h3>
+            <ul>
+                <li>Hit within 2m of a 50%+ repaired generator: +2</li>
+                <li>Pulling Engineer off generator: +10</li>
+                <li>
+                    Blocking or exploding a generator being repaired by Engineer: +2
+                </li>
+                <li>
+                    Bonus remains for 10 seconds after Engineer stops repairing
+                    (for manual kick only)
+                </li>
+            </ul>
+
+        </div>
+
+        <button id="closeKillerRules" class="ban-btn small rules-close">
+            Close
+        </button>
+    </div>
+</div>
+
+<div class="page-wrapper">
+
+    <header class="rating-header">
+
+        <button id="killerRulesBtn" class="header-btn">
+            Killer Rules
+        </button>
+
+        <img
+                id="logoBtn"
+                src="https://wallpapers.com/images/hd/dead-by-daylight-logo-uupbkn41vod8k145.jpg"
+                class="header-logo"
+        />
+
+        <button id="survRulesBtn" class="header-btn">
+            Survivor Rules
+        </button>
+
+    </header>
+
+    <div class="info-container">
+
+        <h1 class="ranked-title">Ranked Mode</h1>
+
+        <p class="info-text">
+
+            Ranked mode is built around strategic decision-making from both sides –
+            from thoughtful build choices to tactics and moment-to-moment actions.
+            <br><br>
+
+            Survivors must become a true team, working in perfect coordination
+            to achieve victory – while the Killer must rise as a relentless threat.
+            <br><br>
+
+            In Ranked Mode, Survivors can choose from <b>4 distinct roles</b>,
+            each providing unique advantages. Choose wisely, based on your playstyle and strengths.
+            <br><br>
+
+            <i>Enjoy your suffering in the Fog.</i>
+
+        </p>
+
+        <h2 class="section-title">Gameplay</h2>
+
+        <div class="gameplay-text">
+
+            At the beginning of a match, both sides block 3 perks for their opponents – one from each category.
+            Survivors restrict Hex, Generator Regression and Blocking perks, while the Killer blocks Exhaustion, Boon and Second Chance perks.
+
+            <br><br>
+
+            After that, both sides have 60 seconds to finalize their builds.
+
+            <br><br>
+
+            The match then proceeds to the map veto phase – each side alternately bans 4 realms and then selects 2 from the remaining ones.
+            One realm is chosen at random from the 4 selected, along with a random variation if available.
+
+            <br><br>
+
+            During the trial, both sides earn rating points based on their performance and in-game actions.
+
+            <br><br>
+
+            The final outcome is determined by comparing the Killer’s total rating points
+            to the average rating score of all Survivors.
+
+            <br><br>
+
+            More details can be found in the Survivor / Killer rule sections.
+
+        </div>
+
+        <section class="ranking-section">
+
+            <div class="ranking-text">
+                There are 6 ranks in total – five of them are divided into subranks,
+                from IV to I.
+                <br><br>
+                Each subrank requires 100 rating points to progress.
+                <br><br>
+                The sixth rank stands above the rest – it is not just simply progression,
+                but the ultimate goal – to become the perfect servant of the Entity.
+            </div>
+
+            <div class="ranking-image">
+                <img src="/assets/ranks.png" alt="Ranking System">
+            </div>
+
+        </section>
+
+        <button id="playBtn" class="ban-btn play-btn">
+            PLAY
+        </button>
+</div>
+
+    <footer class="main-footer">
+        DreamDBD – fan-made concept project inspired by Dead by Daylight.
+        All game-related assets belong to Behaviour Interactive.
+    </footer>
+
+</div>
+
+<script src="ratingInfo.js"></script>
+</body>
+</html>

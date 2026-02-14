@@ -1,0 +1,195 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    flex: 1;
+}
+
+.rating-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 10;
+    box-shadow: 0 0 40px rgba(0,0,0,0.9);
+}
+
+.header-logo {
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.05);
+}
+
+.header-btn {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.header-btn:hover {
+    color: white;
+}
+
+
+.info-container {
+    margin-top: 140px;
+    text-align: center;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ranked-title {
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.info-text {
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+.play-btn {
+    font-size: 2rem;
+    padding: 20px 100px;
+    margin: 20px auto 60px;
+}
+
+.ranking-section {
+    margin-top: 60px;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+
+    background: radial-gradient(circle at center, #0a0a0a, #050505);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    text-align: center;
+}
+
+.ranking-text {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.85;
+    letter-spacing: 0.4px;
+}
+
+.ranking-image img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.95;
+    filter: drop-shadow(0 0 25px rgba(255, 80, 80, 0.25));
+}
+
+.main-footer {
+    background: #020202; /* чуть чернее основной страницы */
+    border-top: 1px solid rgba(255,255,255,0.05);
+
+    text-align: center;
+    padding: 25px 20px;
+
+    font-size: 0.85rem;
+    opacity: 0.6;
+    letter-spacing: 0.4px;
+}
+
+.section-title {
+    margin-top: 60px;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.gameplay-text {
+    margin-top: 25px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+.rules-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    background: rgba(0,0,0,0.85);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.rules-modal.show {
+    display: flex;
+}
+
+.rules-window {
+    width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: radial-gradient(circle at top, #111, #000);
+    border: 2px solid rgba(255,255,255,0.2);
+    padding: 30px 40px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+}
+
+.rules-content h3 {
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.rules-content ul {
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.rules-content h3,
+.rules-window h2 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.center-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.center-list li {
+    opacity: 0.8;
+    margin: 3px 0;
+}
+
+.rules-close {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 40px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}

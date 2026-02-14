@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: #f0f0f0;
+    min-height: 100vh;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}

@@ -1,3 +1,4 @@
-/           /mainPage/index.html 200
-/rating     /rating/rating.html 200
-/ratingInfo /ratingInfo/ratingInfo.html 200
+/rating/*      /rating/:splat     200
+/ratingInfo/*  /ratingInfo/:splat 200
+
+/   /index.html   200

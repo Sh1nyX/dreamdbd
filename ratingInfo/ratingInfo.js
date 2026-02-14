@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () =>
 
     document.getElementById("playBtn")?.addEventListener("click", () =>
     {
-        window.location.href = "rating/rating.html";
+        window.location.href = "../rating/rating.html";
     });
 
     document.getElementById("logoBtn")?.addEventListener("click", () =>

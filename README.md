@@ -1,7 +1,10 @@
-DreamDBD is a fan-made prototype of an alternative ranked system for Dead by Daylight.
-The project focuses on structured match evaluation, competitive mechanics and deterministic scoring instead of binary win or loss outcomes.
+DreamDBD
 
-The system simulates a full ranked flow including:
+DreamDBD is a fan-made prototype of an alternative ranked system for an asymmetrical multiplayer game inspired by Dead by Daylight.
+
+The project models a performance-based competitive environment where match outcomes are determined through structured evaluation instead of binary win or loss states.
+
+It simulates the full ranked flow including:
 
 pre-match perk bans
 
@@ -13,22 +16,24 @@ match event simulation
 
 scoring based on player actions
 
-rating comparison between sides
+final rating comparison between sides
 
-Overview
+DreamDBD is not a gameplay modification.
+It is a systems prototype focused on competitive structure and evaluation logic.
 
-DreamDBD is not a gameplay mod.
-It is a systems prototype that models how a competitive environment for an asymmetrical game could function.
+Core Concept
 
-The core idea is replacing traditional match results with performance-based evaluation.
+The traditional result of:
 
-The final outcome is determined by comparing:
+escape vs kill
+
+is replaced by:
 
 Killer rating score
-against
+vs
 average Survivor rating score
 
-This allows matches to be evaluated based on efficiency rather than escape or kill count alone.
+This allows match performance to be evaluated based on efficiency, pressure and contribution rather than outcome alone.
 
 Implemented Systems
 1. Pre-Match Ban Phase
@@ -55,11 +60,12 @@ Perk pools are loaded from:
 
 data/perks.json
 
-Ban logic is role-aware and type-based.
+
+Ban logic is type-based and role-aware.
 
 2. Survivor Roles
 
-Each survivor selects a role which affects scoring:
+Each survivor selects a role that modifies scoring behavior:
 
 Runner
 
@@ -69,30 +75,30 @@ Altruist
 
 Engineer
 
-Roles are defined in:
+Defined in:
 
 rating/match/roles.js
 
-Each role interacts with match events differently through modifiers.
+
+Roles influence how match events are evaluated.
 
 3. Map Veto System
 
-Map selection is handled through structured voting.
-
-Flow:
+Structured map selection:
 
 Killer bans 4 realms
 
 Survivors ban 4 realms
 
-Killer selects 2 realms
+Killer selects 2
 
-Survivors select 2 realms
+Survivors select 2
 
-One final realm is selected randomly from the remaining pool.
-If the realm has variations, a random variation is chosen.
+Final realm is randomly chosen from remaining pool
 
-Map data is loaded from:
+Random variation is selected if available
+
+Map data:
 
 data/maps.json
 
@@ -100,21 +106,22 @@ data/maps.json
 
 The simulator models:
 
-player actions
-
-hook states
-
-chase events
+chase duration
 
 generator progress
 
-altruistic interactions
+hook states
 
-pressure scenarios
+interaction pressure
 
-Simulation is implemented in:
+altruistic actions
+
+tactical efficiency
+
+Core file:
 
 rating/match/simulator.js
+
 
 Supporting logic:
 
@@ -122,49 +129,52 @@ rating/match/events.js
 rating/match/entities.js
 rating/match/modifiers.js
 
-The system generates an event timeline which becomes the base for scoring.
+
+The system generates an event timeline used for scoring.
 
 5. Scoring System
 
-Scoring is separated into:
+Separated logic:
 
-Killer scoring logic
-Survivor scoring logic
-
-Files:
+Killer:
 
 rating/scoring/killerScoring.js
+
+
+Survivors:
+
 rating/scoring/survivorScoring.js
 
-Each event contributes to rating value based on:
+
+Aggregation:
+
+rating/scoring/aggregators.js
+
+
+Each event contributes rating value based on:
 
 role context
 
 action type
 
+timing
+
 efficiency
-
-interaction timing
-
-Aggregated results are produced in:
-
-rating/scoring/aggregators.js
 
 6. Result Evaluation
 
-Instead of determining a winner by escape or kills:
-
-Final outcome =
+Final outcome is determined by:
 
 Killer Score
 vs
 Average Survivor Score
 
-This makes the system compatible with competitive analysis.
+
+This makes the system compatible with competitive evaluation rather than binary victory.
 
 7. Match Reporting
 
-The system outputs:
+System outputs:
 
 full action log
 
@@ -172,7 +182,7 @@ rating summary
 
 performance breakdown
 
-Rendering is handled by:
+Rendering handled by:
 
 rating/ui/renderLog.js
 rating/ui/renderReport.js
@@ -183,23 +193,27 @@ The ranking system includes:
 
 6 total ranks
 
-Ranks 1 to 5 contain subranks from IV to I
+Ranks 1 to 5 contain subranks IV to I
 
-Each subrank requires 100 rating points to advance
+Each subrank requires 100 rating points
 
-The 6th rank represents the top performance tier.
+Rank 6 represents the top performance tier
 
 Data-Driven Design
 
-Core gameplay data is externalized.
+Gameplay data is externalized:
 
 Maps:
+
 data/maps.json
 
+
 Perks:
+
 data/perks.json
 
-This allows easy balancing and system iteration without modifying logic.
+
+This allows balancing without modifying logic.
 
 UI Structure
 
@@ -207,23 +221,69 @@ Main interface:
 
 mainPage/
 
+
 Ranked mode:
 
 rating/
+
 
 Information page:
 
 ratingInfo/
 
-The UI is built using:
+Technology
 
-vanilla JavaScript
+The project is built using:
 
-modular logic separation
+Vanilla JavaScript
 
-JSON-driven content
+ES Modules
 
-No external frameworks are used.
+JSON-driven configuration
+
+Static UI architecture
+
+No frameworks are used.
+
+Running the Project Locally
+
+Because the project uses ES module imports, it must be served through a local development server.
+
+1. Install dependencies
+   npm install
+
+2. Run local server
+
+Recommended:
+
+npx serve .
+
+or
+
+npx http-server .
+
+
+Do not open files directly via file://
+Modules will not load in that mode.
+
+3. Open in browser
+   http://localhost:3000/mainPage/
+
+Deployment
+
+The project is deployed as a static site.
+
+Production builds work without Node runtime.
+
+Example deployment platforms:
+
+Netlify
+
+Cloudflare Pages
+
+Vercel
+
+No build step is required.
 
 Project Purpose
 
@@ -237,6 +297,6 @@ event-based scoring
 
 map veto logic
 
-can be combined into a competitive ranking environment for an asymmetrical multiplayer game.
+can be combined into a deterministic competitive ranking system for asymmetrical multiplayer design.
 
 License: MIT License

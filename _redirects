@@ -1,4 +1,0 @@
-/rating/*        /rating/:splat        200
-/ratingInfo/*    /ratingInfo/:splat    200
-
-/*               /index.html           200

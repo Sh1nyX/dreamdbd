@@ -1,7 +1,4 @@
-/rating           /rating/rating.html      200
-/ratingInfo       /ratingInfo/ratingInfo.html 200
+/rating      /rating/rating.html      200
+/ratingInfo  /ratingInfo/ratingInfo.html 200
 
-/rating/*         /rating/:splat
-/ratingInfo/*     /ratingInfo/:splat
-
-/*                /mainPage/index.html     200
+/*           /mainPage/index.html     200

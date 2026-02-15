@@ -58,7 +58,7 @@ class PerkService {
 
     static async loadSurvivorPerksForBan()
     {
-        const data = await fetch("../data/perks.json").then(r => r.json());
+        const data = await fetch("data/perks.json").then(r => r.json());
 
         const allowedTypes = ["exaust", "secondchance", "boon"];
 
@@ -70,7 +70,7 @@ class PerkService {
 
     static async loadKillerPerksForPick()
     {
-        const data = await fetch("../data/perks.json").then(r => r.json());
+        const data = await fetch("data/perks.json").then(r => r.json());
 
         return data.filter(perk =>
             perk.role === "Killer"
@@ -273,7 +273,7 @@ async function initSurvivorBanScene(onFinish)
 
     createSurvivorBanSlots();
 
-    const data = await fetch("../data/perks.json").then(r => r.json());
+    const data = await fetch("data/perks.json").then(r => r.json());
     const perks = data.filter(p => p.role === "Killer" && ["hex", "gen", "block"].includes(p.type));
 
     renderSurvivorBanGrid(perks, onFinish);
@@ -483,7 +483,7 @@ function resolveVotes(list)
 
 async function generateFakeKillerBansForSurvivor()
 {
-    const data = await fetch("../data/perks.json").then(r => r.json());
+    const data = await fetch("data/perks.json").then(r => r.json());
 
     const categories = ["boon", "exaust", "secondchance"];
 
@@ -1488,7 +1488,7 @@ async function initMapVoting()
 
     activeMapMode = "KILLER";
 
-    const res = await fetch("../data/maps.json");
+    const res = await fetch("data/maps.json");
     MapVotingState.maps = await res.json();
 
     MapVotingState.phase = "KILLER_BAN";
@@ -1507,7 +1507,7 @@ async function initSurvivorMapBan()
 
     activeMapMode = "SURVIVOR";
 
-    const res = await fetch("../data/maps.json");
+    const res = await fetch("data/maps.json");
     SurvivorMapVotingState.maps = await res.json();
 
     SurvivorMapVotingState.phase = "KILLER_BAN_WAIT";

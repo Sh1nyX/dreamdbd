@@ -18,6 +18,8 @@ export function createSurvivor(role, id)
     };
 }
 
+//uhm...
+
 export function createKiller()
 {
     return {

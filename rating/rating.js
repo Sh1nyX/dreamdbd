@@ -1488,7 +1488,7 @@ async function initMapVoting()
 
     activeMapMode = "KILLER";
 
-    const res = await fetch("/data/maps.json");
+    const res = await fetch("../data/maps.json");
     MapVotingState.maps = await res.json();
 
     MapVotingState.phase = "KILLER_BAN";
@@ -1507,7 +1507,7 @@ async function initSurvivorMapBan()
 
     activeMapMode = "SURVIVOR";
 
-    const res = await fetch("/data/maps.json");
+    const res = await fetch("../data/maps.json");
     SurvivorMapVotingState.maps = await res.json();
 
     SurvivorMapVotingState.phase = "KILLER_BAN_WAIT";

@@ -3,57 +3,57 @@
     "id": 100,
     "name": "The MacMillan Estate",
     "realm": "The MacMillan Estate",
-    "image": "assets/maps/ind_CoalTower.webp",
+    "image": "/dreamdbd/assets/maps/ind_CoalTower.webp",
     "variations": [
       {
         "id": 1,
         "name": "Coal Tower I",
-        "image": "assets/maps/ind_CoalTower.webp"
+        "image": "/dreamdbd/assets/maps/ind_CoalTower.webp"
       },
       {
         "id": 44,
         "name": "Coal Tower II",
-        "image": "assets/maps/ind_CoalTower.webp"
+        "image": "/dreamdbd/assets/maps/ind_CoalTower.webp"
       },
       {
         "id": 2,
         "name": "Groaning Storehouse I",
-        "image": "assets/maps/ind_Storehouse.webp"
+        "image": "/dreamdbd/assets/maps/ind_Storehouse.webp"
       },
       {
         "id": 45,
         "name": "Groaning Storehouse II",
-        "image": "assets/maps/ind_Storehouse.webp"
+        "image": "/dreamdbd/assets/maps/ind_Storehouse.webp"
       },
       {
         "id": 3,
         "name": "Ironworks of Misery I",
-        "image": "assets/maps/ind_Foundry.webp"
+        "image": "/dreamdbd/assets/maps/ind_Foundry.webp"
       },
       {
         "id": 46,
         "name": "Ironworks of Misery II",
-        "image": "assets/maps/ind_Foundry.webp"
+        "image": "/dreamdbd/assets/maps/ind_Foundry.webp"
       },
       {
         "id": 4,
         "name": "Shelter Woods I",
-        "image": "assets/maps/ind_Forest.webp"
+        "image": "/dreamdbd/assets/maps/ind_Forest.webp"
       },
       {
         "id": 47,
         "name": "Shelter Woods II",
-        "image": "assets/maps/ind_Forest.webp"
+        "image": "/dreamdbd/assets/maps/ind_Forest.webp"
       },
       {
         "id": 5,
         "name": "Suffocation Pit I",
-        "image": "assets/maps/ind_Mine.webp"
+        "image": "/dreamdbd/assets/maps/ind_Mine.webp"
       },
       {
         "id": 48,
         "name": "Suffocation Pit II",
-        "image": "assets/maps/ind_Mine.webp"
+        "image": "/dreamdbd/assets/maps/ind_Mine.webp"
       }
     ]
   },
@@ -61,32 +61,32 @@
     "id": 101,
     "name": "Autohaven Wreckers",
     "realm": "Autohaven Wreckers",
-    "image": "assets/maps/jnk_Office.webp",
+    "image": "/dreamdbd/assets/maps/jnk_Office.webp",
     "variations": [
       {
         "id": 6,
         "name": "Azarov's Resting Place",
-        "image": "assets/maps/jnk_Office.webp"
+        "image": "/dreamdbd/assets/maps/jnk_Office.webp"
       },
       {
         "id": 7,
         "name": "Blood Lodge",
-        "image": "assets/maps/jnk_Lodge.webp"
+        "image": "/dreamdbd/assets/maps/jnk_Lodge.webp"
       },
       {
         "id": 8,
         "name": "Gas Heaven",
-        "image": "assets/maps/jnk_GasStation.webp"
+        "image": "/dreamdbd/assets/maps/jnk_GasStation.webp"
       },
       {
         "id": 9,
         "name": "Wreckers' Yard",
-        "image": "assets/maps/jnk_Scrapyard.webp"
+        "image": "/dreamdbd/assets/maps/jnk_Scrapyard.webp"
       },
       {
         "id": 10,
         "name": "Wretched Shop",
-        "image": "assets/maps/jnk_Garage.webp"
+        "image": "/dreamdbd/assets/maps/jnk_Garage.webp"
       }
     ]
   },
@@ -94,32 +94,32 @@
     "id": 102,
     "name": "Coldwind Farm",
     "realm": "Coldwind Farm",
-    "image": "assets/maps/frm_Barn.webp",
+    "image": "/dreamdbd/assets/maps/frm_Barn.webp",
     "variations": [
       {
         "id": 11,
         "name": "Fractured Cowshed",
-        "image": "assets/maps/frm_Barn.webp"
+        "image": "/dreamdbd/assets/maps/frm_Barn.webp"
       },
       {
         "id": 12,
         "name": "Rancid Abattoir",
-        "image": "assets/maps/frm_Slaughterhouse.webp"
+        "image": "/dreamdbd/assets/maps/frm_Slaughterhouse.webp"
       },
       {
         "id": 13,
         "name": "Rotten Fields",
-        "image": "assets/maps/frm_Cornfield.webp"
+        "image": "/dreamdbd/assets/maps/frm_Cornfield.webp"
       },
       {
         "id": 14,
         "name": "The Thompson House",
-        "image": "assets/maps/frm_Farmhouse.webp"
+        "image": "/dreamdbd/assets/maps/frm_Farmhouse.webp"
       },
       {
         "id": 15,
         "name": "Torment Creek",
-        "image": "assets/maps/frm_Silo.webp"
+        "image": "/dreamdbd/assets/maps/frm_Silo.webp"
       }
     ]
   },
@@ -127,17 +127,17 @@
     "id": 103,
     "name": "Crotus Prenn Asylum",
     "realm": "Crotus Prenn Asylum",
-    "image": "assets/maps/asy_Asylum.webp",
+    "image": "/dreamdbd/assets/maps/asy_Asylum.webp",
     "variations": [
       {
         "id": 16,
         "name": "Disturbed Ward",
-        "image": "assets/maps/asy_Asylum.webp"
+        "image": "/dreamdbd/assets/maps/asy_Asylum.webp"
       },
       {
         "id": 17,
         "name": "Father Campbell's Chapel",
-        "image": "assets/maps/asy_Chapel.webp"
+        "image": "/dreamdbd/assets/maps/asy_Chapel.webp"
       }
     ]
   },
@@ -145,17 +145,17 @@
     "id": 104,
     "name": "Backwater Swamp",
     "realm": "Backwater Swamp",
-    "image": "assets/maps/swp_PaleRose.webp",
+    "image": "/dreamdbd/assets/maps/swp_PaleRose.webp",
     "variations": [
       {
         "id": 19,
         "name": "The Pale Rose",
-        "image": "assets/maps/swp_PaleRose.webp"
+        "image": "/dreamdbd/assets/maps/swp_PaleRose.webp"
       },
       {
         "id": 20,
         "name": "Grim Pantry",
-        "image": "assets/maps/swp_GrimPantry.webp"
+        "image": "/dreamdbd/assets/maps/swp_GrimPantry.webp"
       }
     ]
   },
@@ -163,12 +163,12 @@
     "id": 105,
     "name": "Lery's Memorial Institute",
     "realm": "Lery's Memorial Institute",
-    "image": "assets/maps/hos_Treatment.webp",
+    "image": "/dreamdbd/assets/maps/hos_Treatment.webp",
     "variations": [
       {
         "id": 21,
         "name": "Treatment Theatre",
-        "image": "assets/maps/hos_Treatment.webp"
+        "image": "/dreamdbd/assets/maps/hos_Treatment.webp"
       }
     ]
   },
@@ -176,12 +176,12 @@
     "id": 106,
     "name": "Gideon Meat Plant",
     "realm": "Gideon Meat Plant",
-    "image": "assets/maps/fin_TheGame.webp",
+    "image": "/dreamdbd/assets/maps/fin_TheGame.webp",
     "variations": [
       {
         "id": 29,
         "name": "The Game",
-        "image": "assets/maps/fin_TheGame.webp"
+        "image": "/dreamdbd/assets/maps/fin_TheGame.webp"
       }
     ]
   },
@@ -189,17 +189,17 @@
     "id": 107,
     "name": "Yamaoka Estate",
     "realm": "Yamaoka Estate",
-    "image": "assets/maps/hti_Manor.webp",
+    "image": "/dreamdbd/assets/maps/hti_Manor.webp",
     "variations": [
       {
         "id": 30,
         "name": "Family Residence I",
-        "image": "assets/maps/hti_Manor.webp"
+        "image": "/dreamdbd/assets/maps/hti_Manor.webp"
       },
       {
         "id": 31,
         "name": "Sanctum of Wrath I",
-        "image": "assets/maps/hti_Shrine.webp"
+        "image": "/dreamdbd/assets/maps/hti_Shrine.webp"
       }
     ]
   },
@@ -207,17 +207,17 @@
     "id": 108,
     "name": "Ormond",
     "realm": "Ormond",
-    "image": "assets/maps/kny_Cottage.webp",
+    "image": "/dreamdbd/assets/maps/kny_Cottage.webp",
     "variations": [
       {
         "id": 32,
         "name": "Mount Ormond Resort I",
-        "image": "assets/maps/kny_Cottage.webp"
+        "image": "/dreamdbd/assets/maps/kny_Cottage.webp"
       },
       {
         "id": 63,
         "name": "Ormond Lake Mine",
-        "image": "assets/maps/glo_Level01.webp"
+        "image": "/dreamdbd/assets/maps/glo_Level01.webp"
       }
     ]
   },
@@ -225,32 +225,32 @@
     "id": 109,
     "name": "Springwood",
     "realm": "Springwood",
-    "image": "assets/maps/eng_ElmStreet.webp",
+    "image": "/dreamdbd/assets/maps/eng_ElmStreet.webp",
     "variations": [
       {
         "id": 24,
         "name": "Badham Preschool I",
-        "image": "assets/maps/eng_ElmStreet.webp"
+        "image": "/dreamdbd/assets/maps/eng_ElmStreet.webp"
       },
       {
         "id": 25,
         "name": "Badham Preschool II",
-        "image": "assets/maps/eng_ElmStreet02.webp"
+        "image": "/dreamdbd/assets/maps/eng_ElmStreet02.webp"
       },
       {
         "id": 26,
         "name": "Badham Preschool III",
-        "image": "assets/maps/eng_ElmStreet03.webp"
+        "image": "/dreamdbd/assets/maps/eng_ElmStreet03.webp"
       },
       {
         "id": 27,
         "name": "Badham Preschool IV",
-        "image": "assets/maps/eng_ElmStreet04.webp"
+        "image": "/dreamdbd/assets/maps/eng_ElmStreet04.webp"
       },
       {
         "id": 28,
         "name": "Badham Preschool V",
-        "image": "assets/maps/eng_ElmStreet05.webp"
+        "image": "/dreamdbd/assets/maps/eng_ElmStreet05.webp"
       }
     ]
   },
@@ -258,17 +258,17 @@
     "id": 110,
     "name": "Red Forest",
     "realm": "Red Forest",
-    "image": "assets/maps/brl_MaHouse.webp",
+    "image": "/dreamdbd/assets/maps/brl_MaHouse.webp",
     "variations": [
       {
         "id": 22,
         "name": "Mother's Dwelling",
-        "image": "assets/maps/brl_MaHouse.webp"
+        "image": "/dreamdbd/assets/maps/brl_MaHouse.webp"
       },
       {
         "id": 23,
         "name": "The Temple of Purgation",
-        "image": "assets/maps/brl_Temple.webp"
+        "image": "/dreamdbd/assets/maps/brl_Temple.webp"
       }
     ]
   },
@@ -276,12 +276,12 @@
     "id": 111,
     "name": "Haddonfield",
     "realm": "Haddonfield",
-    "image": "assets/maps/sub_Street.webp",
+    "image": "/dreamdbd/assets/maps/sub_Street.webp",
     "variations": [
       {
         "id": 18,
         "name": "Lampkin Lane",
-        "image": "assets/maps/sub_Street.webp"
+        "image": "/dreamdbd/assets/maps/sub_Street.webp"
       }
     ]
   },
@@ -289,12 +289,12 @@
     "id": 112,
     "name": "Hawkins National Laboratory",
     "realm": "Hawkins National Laboratory",
-    "image": "assets/maps/qat_Lab.webp",
+    "image": "/dreamdbd/assets/maps/qat_Lab.webp",
     "variations": [
       {
         "id": 33,
         "name": "The Underground Complex",
-        "image": "assets/maps/qat_Lab.webp"
+        "image": "/dreamdbd/assets/maps/qat_Lab.webp"
       }
     ]
   },
@@ -302,12 +302,12 @@
     "id": 113,
     "name": "Grave of Glenvale",
     "realm": "Grave of Glenvale",
-    "image": "assets/maps/ukr_Saloon.webp",
+    "image": "/dreamdbd/assets/maps/ukr_Saloon.webp",
     "variations": [
       {
         "id": 34,
         "name": "Dead Dawg Saloon",
-        "image": "assets/maps/ukr_Saloon.webp"
+        "image": "/dreamdbd/assets/maps/ukr_Saloon.webp"
       }
     ]
   },
@@ -315,12 +315,12 @@
     "id": 114,
     "name": "Silent Hill",
     "realm": "Silent Hill",
-    "image": "assets/maps/wal_Level01.webp",
+    "image": "/dreamdbd/assets/maps/wal_Level01.webp",
     "variations": [
       {
         "id": 35,
         "name": "Midwich Elementary School",
-        "image": "assets/maps/wal_Level01.webp"
+        "image": "/dreamdbd/assets/maps/wal_Level01.webp"
       }
     ]
   },
@@ -328,17 +328,17 @@
     "id": 115,
     "name": "Raccoon City",
     "realm": "Raccoon City",
-    "image": "assets/maps/orion_Level01.webp",
+    "image": "/dreamdbd/assets/maps/orion_Level01.webp",
     "variations": [
       {
         "id": 39,
         "name": "R.C.P.S. West Wing",
-        "image": "assets/maps/orion_Level01.webp"
+        "image": "/dreamdbd/assets/maps/orion_Level01.webp"
       },
       {
         "id": 40,
         "name": "R.C.P.S. East Wing",
-        "image": "assets/maps/ecl_Level01.webp"
+        "image": "/dreamdbd/assets/maps/ecl_Level01.webp"
       }
     ]
   },
@@ -346,17 +346,17 @@
     "id": 116,
     "name": "Forsaken Boneyard",
     "realm": "Forsaken Boneyard",
-    "image": "assets/maps/ion_Level01.webp",
+    "image": "/dreamdbd/assets/maps/ion_Level01.webp",
     "variations": [
       {
         "id": 37,
         "name": "Eyrie of Crows",
-        "image": "assets/maps/ion_Level01.webp"
+        "image": "/dreamdbd/assets/maps/ion_Level01.webp"
       },
       {
         "id": 64,
         "name": "Dead Sands",
-        "image": "assets/maps/ice_Level01.webp"
+        "image": "/dreamdbd/assets/maps/ice_Level01.webp"
       }
     ]
   },
@@ -364,27 +364,27 @@
     "id": 117,
     "name": "Withered Isle",
     "realm": "Withered Isle",
-    "image": "assets/maps/meteor_Level01.webp",
+    "image": "/dreamdbd/assets/maps/meteor_Level01.webp",
     "variations": [
       {
         "id": 38,
         "name": "Garden of Joy",
-        "image": "assets/maps/meteor_Level01.webp"
+        "image": "/dreamdbd/assets/maps/meteor_Level01.webp"
       },
       {
         "id": 54,
         "name": "Greenville Square",
-        "image": "assets/maps/apl_Level01.webp"
+        "image": "/dreamdbd/assets/maps/apl_Level01.webp"
       },
       {
         "id": 65,
         "name": "Freddy Fazbear's Pizza",
-        "image": "assets/maps/apl_Level02.webp"
+        "image": "/dreamdbd/assets/maps/apl_Level02.webp"
       },
       {
         "id": 66,
         "name": "Fallen Refuge",
-        "image": "assets/maps/apl_Shack.webp"
+        "image": "/dreamdbd/assets/maps/apl_Shack.webp"
       }
     ]
   },
@@ -392,17 +392,17 @@
     "id": 118,
     "name": "The Decimated Borgo",
     "realm": "The Decimated Borgo",
-    "image": "assets/maps/qtm_Level01.webp",
+    "image": "/dreamdbd/assets/maps/qtm_Level01.webp",
     "variations": [
       {
         "id": 41,
         "name": "The Shattered Square",
-        "image": "assets/maps/qtm_Level01.webp"
+        "image": "/dreamdbd/assets/maps/qtm_Level01.webp"
       },
       {
         "id": 55,
         "name": "Forgotten Ruins",
-        "image": "assets/maps/qtm_Level02.webp"
+        "image": "/dreamdbd/assets/maps/qtm_Level02.webp"
       }
     ]
   },
@@ -410,17 +410,17 @@
     "id": 119,
     "name": "Dvarka Deepwood",
     "realm": "Dvarka Deepwood",
-    "image": "assets/maps/uba_Level01.webp",
+    "image": "/dreamdbd/assets/maps/uba_Level01.webp",
     "variations": [
       {
         "id": 42,
         "name": "Toba Landing",
-        "image": "assets/maps/uba_Level01.webp"
+        "image": "/dreamdbd/assets/maps/uba_Level01.webp"
       },
       {
         "id": 43,
         "name": "Nostromo Wreckage",
-        "image": "assets/maps/wrm_Level01.webp"
+        "image": "/dreamdbd/assets/maps/wrm_Level01.webp"
       }
     ]
   }

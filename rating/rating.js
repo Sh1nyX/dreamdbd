@@ -846,7 +846,7 @@ async function initSurvivorBuildPick()
         document.getElementById("selectedPerks").appendChild(slot);
     }
 
-    const data = await fetch("../data/perks.json").then(r => r.json());
+    const data = await fetch("data/perks.json").then(r => r.json());
     const perks = data.filter(p => p.role === "Survivor");
 
     const lockedMap = {};

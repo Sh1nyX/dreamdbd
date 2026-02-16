@@ -40,6 +40,7 @@ export function renderReport(report) {
 
     // SURVIVOR SCORES + TOTAL
 
+    console.log("NEW RENDER REPORT LOADED");
     const survBlock = document.createElement("div");
     survBlock.className = "report-section";
 

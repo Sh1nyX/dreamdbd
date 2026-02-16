@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () =>
 
     document.getElementById("logoBtn")?.addEventListener("click", () =>
     {
-        window.location.href = "./rating/rating.html";
+        window.location.href = "/dreamdbd/";
     });
 
     document.getElementById("survRulesBtn")

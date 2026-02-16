@@ -1959,5 +1959,5 @@ document.getElementById("survivorBtn").addEventListener("click", () =>
 
 document.getElementById("exitBtn").addEventListener("click", () =>
 {
-    window.location.href = "/dreamdbd/";
+    window.location.href = "../";
 });

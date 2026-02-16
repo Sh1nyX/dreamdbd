@@ -55,10 +55,12 @@ export function renderReport(report) {
         survBlock.appendChild(row);
     });
 
-    const avg = document.createElement("div");
-    avg.className = "report-total";
-    avg.textContent = `Average survivor rating: ${report.avgSurvivor.toFixed(1)}`;
-    survBlock.appendChild(avg);
+    const totalSurv = report.survivors.reduce((sum, s) => sum + s.score, 0);
+
+    const total = document.createElement("div");
+    total.className = "report-total";
+    total.textContent = `Total survivor rating: ${totalSurv}`;
+    survBlock.appendChild(total);
 
     table.appendChild(survBlock);
 

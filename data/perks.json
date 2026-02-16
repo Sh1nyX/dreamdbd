@@ -435,7 +435,7 @@
     "name": "Coup de Grâce",
     "role": "Killer",
     "character": "The Twins",
-    "icon": "/dreamdbd/assets/perks/coup-de-grce.png",
+    "icon": "/dreamdbd/assets/perks/coup-de-grace.png",
     "description": "As the end nears, you go in for the kill.Each time a generator is completed, Coup de Grâce grows in power. Gain 2 tokens, with a maximum of 5 tokens.Consume one token to increase the distance of your next lunge attack by 70/75/80%."
   },
   {

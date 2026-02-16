@@ -58,7 +58,7 @@ class PerkService {
 
     static async loadSurvivorPerksForBan()
     {
-        const data = await fetch("data/perks.json").then(r => r.json());
+        const data = await fetch("/dreamdbd/data/perks.json").then(r => r.json());
 
         const allowedTypes = ["exaust", "secondchance", "boon"];
 
@@ -70,7 +70,7 @@ class PerkService {
 
     static async loadKillerPerksForPick()
     {
-        const data = await fetch("data/perks.json").then(r => r.json());
+        const data = await fetch("/dreamdbd/data/perks.json").then(r => r.json());
 
         return data.filter(perk =>
             perk.role === "Killer"
@@ -273,7 +273,7 @@ async function initSurvivorBanScene(onFinish)
 
     createSurvivorBanSlots();
 
-    const data = await fetch("data/perks.json").then(r => r.json());
+    const data = await fetch("/dreamdbd/data/perks.json").then(r => r.json());
     const perks = data.filter(p => p.role === "Killer" && ["hex", "gen", "block"].includes(p.type));
 
     renderSurvivorBanGrid(perks, onFinish);
@@ -483,7 +483,7 @@ function resolveVotes(list)
 
 async function generateFakeKillerBansForSurvivor()
 {
-    const data = await fetch("data/perks.json").then(r => r.json());
+    const data = await fetch("/dreamdbd/data/perks.json").then(r => r.json());
 
     const categories = ["boon", "exaust", "secondchance"];
 
@@ -846,7 +846,7 @@ async function initSurvivorBuildPick()
         document.getElementById("selectedPerks").appendChild(slot);
     }
 
-    const data = await fetch("data/perks.json").then(r => r.json());
+    const data = await fetch("/dreamdbd/data/perks.json").then(r => r.json());
     const perks = data.filter(p => p.role === "Survivor");
 
     const lockedMap = {};

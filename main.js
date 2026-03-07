@@ -8,5 +8,5 @@ ratingBtn.addEventListener("click", () =>
 
 killerlistBtn.addEventListener("click", () =>
 {
-    window.location.href = "dreamdbd/killerlist/killerlist.html";
+    window.location.href = "killerlist/killerlist.html";
 })

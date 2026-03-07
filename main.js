@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "ratingInfo/ratingInfo.html";
     });
 
-    killerListBtn.addEventListener("click", () => {
+    /*killerListBtn.addEventListener("click", () => {
         window.location.href = "killerlist/killerlist.html";
-    });
+    });*/
 });

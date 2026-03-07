@@ -1,5 +1,5 @@
 const ratingBtn = document.getElementById("ratingShowcaseBtn");
-const killerlistBtn = document.getElementById("killerlistShowcaseBtn");
+const killerlistBtn = document.getElementById("killerListBtn");
 
 ratingBtn.addEventListener("click", () =>
 {
